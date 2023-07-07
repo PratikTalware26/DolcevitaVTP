@@ -1,0 +1,126 @@
+.location-img-cont{
+    width: 100%;
+    min-height: 400px;
+    background-image: url("../assets/vtpLocation.webp"), url("../assets/vtpLocation.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 2px 2px 2px 2px #ccc;
+    transition: transform 0.5s ease;
+}
+.location-img-cont.enlarged {
+  transform: scale(1.2);
+}
+.location-desc{
+    width: 100%;
+}
+.location-desc p{
+    color: #6D6C77;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.location-desc .visible {
+  opacity: 1 !important;
+}
+
+.location-desc .visible:nth-child(1) {
+  transition-delay: 0.2s;
+}
+
+.location-desc .visible:nth-child(2) {
+  transition-delay: 0.4s;
+}
+
+.location-desc .visible:nth-child(3) {
+  transition-delay: 0.6s;
+}
+
+.location-desc .visible:nth-child(4) {
+  transition-delay: 0.8s;
+}
+.location-desc .visible:nth-child(5) {
+  transition-delay: 1s;
+}
+.location-desc .visible:nth-child(6) {
+  transition-delay: 1.2s;
+}
+.location-desc .visible:nth-child(7) {
+  transition-delay: 1.4s;
+}
+.location-desc .visible:nth-child(8) {
+  transition-delay: 1.6s;
+}
+.location-desc .visible:nth-child(9) {
+  transition-delay: 1.8s;
+}
+.location-desc .visible:nth-child(10) {
+  transition-delay: 2s;
+}
+.location-desc .visible:nth-child(11) {
+  transition-delay: 2.2s;
+}
+
+.location-cont{
+    gap: 10px;
+}
+ .zoom-icon-btn{
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+ }
+
+ .enlarged-image-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .enlarged-image-container {
+    position: relative;
+    max-width: 90%;
+    /* max-height: 90%; */
+    /* height:80%; */
+  }
+  
+  .enlarged-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: var(--colorPrimary);
+    font-size: 24px;
+    z-index: 99;
+  }
+  
+  .close-button:hover {
+    color: #ccc;
+  }
+
+@media screen and (max-width:800px) {
+    .location-cont{
+        flex-direction: column;
+    }
+    .location-img-cont{
+        min-height: 400px !important;
+    }
+    .location-desc h2{
+        text-align: center;
+    }
+
+}

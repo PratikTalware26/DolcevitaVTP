@@ -1,0 +1,33 @@
+.home-cont{
+    height: 85vh;
+    background-image: url("../assets/homeImg.webp"), url("../assets/homeImg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 90px;
+}
+.home-cont::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+.home-desc{
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  opacity: 0;
+  transform: translateY(-30px);
+}
+.home-desc.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+.home-desc h3 strong{
+    font-size: 40px;
+}

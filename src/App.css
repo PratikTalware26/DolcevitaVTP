@@ -1,5 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica&family=Mulish&family=Nunito&family=Nunito+Sans&family=Poppins&family=Quicksand&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Geologica', sans-serif;
+/* font-family: 'Mulish', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Quicksand', sans-serif; */
+}
+:root{
+  --colorPrimary:#091E3E;
+  --colorSecondary:#3CA4DB;
+}
+
+/* //button */
+
+.main-btn {
+  color: #fff;
+  transition: all 0.5s;
+  position: relative;
+}
+.main-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: var(--colorSecondary);
+  transition: all 0.3s;
+}
+.main-btn:hover::before {
+  opacity: 0;
+  transform: scale(0.5, 0.5);
+}
+.main-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid var(--colorSecondary);
+  transform: scale(1.2, 1.2);
+}
+.main-btn:hover::after {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+.main-btn span {
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+.main-btn:hover {
+  &.main-btn span {
+    color: black !important;
+  }
+}
+
+/* Swiper */
+@media screen and (min-width:900px) {
+  .swiper-button-next{
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50px;
+    background: white;
+  }
+  .swiper-button-prev{
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50px;
+    background: white;
+  }
+}
+.swiper-button-next:after{
+  font-size: larger !important;
+}
+.swiper-button-prev:after{
+  font-size: larger !important;
 }

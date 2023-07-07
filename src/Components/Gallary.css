@@ -1,0 +1,46 @@
+.gallary-swiper {
+  height: 300px;
+}
+.g-img-back {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 2px #ccc;
+}
+.g1 {
+  background-image: url("../assets/g1.webp"), url("../assets/g1.jpg");
+}
+
+.g2 {
+  background-image: url("../assets/g2.webp"), url("../assets/g2.jpg");
+}
+
+.g3 {
+  background-image: url("../assets/g3.webp"), url("../assets/g3.jpg");
+}
+
+.g5 {
+  background-image: url("../assets/g5.webp"), url("../assets/g5.jpg");
+}
+
+.g6 {
+  background-image: url("../assets/g6.webp"), url("../assets/g6.jpg");
+}
+
+.g7 {
+  background-image: url("../assets/g7.webp"), url("../assets/g7.jpg");
+}
+
+.g8 {
+  background-image: url("../assets/g8.webp"), url("../assets/g8.jpg");
+}
+
+/* .gallary-swiper .swiper-slide {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .gallary-swiper .swiper-slide-active {
+    opacity: 1;
+  } */

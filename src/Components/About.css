@@ -1,0 +1,89 @@
+.about-img{
+    /* min-width: 400px; */
+    min-height: 400px;
+    /* background-image: image-set(
+        url("../assets/aboutImg copy.webp") type("image/webp"),
+        url("../assets/aboutImg copy.jpg") type("image/jpg")
+    ); */
+    background-image: url("../assets/Life-Republic.webp"), url("../assets/Life-Republic.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px 2px grey;
+    opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 1s ease, transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.about-img.show {
+    opacity: 1;
+    transform: scale(1);
+  }
+.main-text-clr{
+    color: var(--colorSecondary);
+}
+.main-text-clr2{
+    color: var(--colorPrimary);
+}
+.main-back-clr{
+    background-color: var(--colorPrimary);
+}
+.main-back-clr2{
+    background-color: var(--colorSecondary);
+}
+.g-30{
+    gap: 50px;
+}
+.site-btn:hover{
+    background-color: var(--colorPrimary) !important;
+}
+/* transition effect */
+
+.about-cont h1,
+.about-cont h2,
+.about-cont p {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.about-cont h1.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-cont h2.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 200ms; /* Delay for h2 */
+}
+
+.about-cont p.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 400ms; /* Delay for p */
+}
+
+  
+
+@media screen and (max-width:1024px) {
+    .about-cont{
+        flex-direction: column;
+        padding: 20px !important;
+    }
+    .about-img-cont{
+        padding: 20px 0 !important;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .more-detail-head{
+        font-size: medium;
+    }
+    .site-btn{
+        font-size: smaller;
+    }
+    .about-cont h5{
+        font-size: smaller;
+    }
+}

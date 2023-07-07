@@ -1,0 +1,22 @@
+.navbar-brand img{
+    width: 100px;
+}
+.nav-cont{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 2px 2px 5px 1px;
+    transition: transform 0.3s ease-in-out;
+}
+.visible {
+    transform: translateY(0);
+  }
+  
+  .hidden {
+    transform: translateY(-100%);
+  }
+.enquiry-nav-btn:hover{
+    background-color: var(--colorSecondary) !important;
+}

@@ -1,0 +1,21 @@
+.amenities-cont{
+    background-color: aliceblue;
+}
+.amen-r1 div, .amen-r2 div{
+    width: 200px;
+}
+.amen-r1 div img, .amen-r2 div img{
+    width: 50px;
+}
+.amen-r1 p, .amen-r2 p{
+    font-weight: 800;
+    margin-top: 10px;
+    font-size: smaller;
+}
+@media screen and (max-width:500px) {
+    .amen-r1, .amen-r2{
+        gap: 10px;
+        padding: 0px !important;
+        padding-bottom: 10px !important;
+    }
+}
