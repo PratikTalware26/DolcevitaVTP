@@ -25,9 +25,9 @@ const Gallary = () => {
         },
       };
   return (
-    <div className='p-3' id='gallery'>
+    <div className='pad-height' id='gallery'>
         <div>
-            <h2 className='main-text-clr text-center fw-bold p-2'>VTP DOLCEVITA GALLERY</h2>
+            <h2 className='main-text-clr text-center fw-bold p-4'>VTP DOLCEVITA GALLERY</h2>
         </div>
         <div>
         <Swiper

@@ -167,8 +167,8 @@ const FloorPlans = () => {
   }, [windowWidth]);
 
   return (
-    <div className="p-3 floor-cont" id="floorplans">
-      <h2 className="text-center p-2 main-text-clr fw-bold">VTP DOLCEVITA FLOOR PLANS</h2>
+    <div className="pad-height floor-cont" id="floorplans">
+      <h2 className="text-center py-4 px-2 main-text-clr fw-bold">VTP DOLCEVITA FLOOR PLANS</h2>
       <div className="p-2">
         <Swiper
         //   pagination={{

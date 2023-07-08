@@ -22,12 +22,12 @@
 }
 
 /* //nav-enquiry btn effect */
-.wrap {
+/* .wrap {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 .enquiry-nav-btn {
   font-family: 'Nunito', sans-serif;
   /* font-size: 22px; */
@@ -46,7 +46,10 @@
   position: relative;
   padding: 10px;
   }
-
+.enquiry-nav-btn span{
+  position: relative;
+  z-index: 2;
+}
 .enquiry-nav-btn::before {
   content: '';
   border-radius: 1000px;
@@ -58,6 +61,7 @@
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: all .3s ease-in-out 0s;
+  z-index: 3;
 }
 
 .enquiry-nav-btn:hover, .enquiry-nav-btn:focus {
@@ -80,7 +84,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: ring 1.5s infinite;
+  animation: ring 1.5s linear 2;
 }
 
 .enquiry-nav-btn:hover::after, .enquiry-nav-btn:focus::after {

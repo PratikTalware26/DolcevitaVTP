@@ -234,7 +234,7 @@ const Navbar = () => {
                 </a>
               </li>
               <div className="nav-item">
-                <button className="btn main-back-clr text-light enquiry-nav-btn" onClick={()=>setFormpopup(!formPopup)}>Enquiry Now</button>
+                <button className="btn main-back-clr text-light enquiry-nav-btn" onClick={()=>setFormpopup(!formPopup)}><span>Enquiry Now</span></button>
               </div>
             </ul>
           </div>

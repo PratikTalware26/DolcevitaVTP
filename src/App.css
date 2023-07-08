@@ -65,7 +65,10 @@ font-family: 'Quicksand', sans-serif; */
     color: black !important;
   }
 }
-
+/* //padding for height */
+.pad-height{
+  padding: 50px 10px !important;
+}
 /* Swiper */
 @media screen and (min-width:900px) {
   .swiper-button-next{

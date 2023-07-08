@@ -99,7 +99,7 @@ const Enquiry = () => {
   
     return (
       <>
-        <div className="footer-parent-cont" id="#enquiry">
+        <div className="footer-parent-cont p-3" id="#enquiry">
           <div className="footer-logo-cont">
             {/* <img src={mainLogo} alt=""/> */}
           </div>

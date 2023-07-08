@@ -183,7 +183,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className='main-back-clr2 d-flex justify-content-around align-items-center p-4'>
+      <div className='main-back-clr2 d-flex justify-content-around align-items-center py-5 px-2'>
         <h2 className='text-light fw-bold more-detail-head'>For More Details Contact Our Property Expert</h2>
         <div><button className='btn main-back-clr text-light site-btn' onClick={()=>setFormpopup(!formPopup)}>Schedule a site visit</button></div>
       </div>

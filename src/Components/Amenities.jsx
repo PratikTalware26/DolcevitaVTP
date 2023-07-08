@@ -22,12 +22,12 @@ import amenImgP8 from "../assets/treadmill.png"
 
 const Amenities = () => {
   return (
-    <div className='p-3 amenities-cont' id='amenities'>
+    <div className='pad-height amenities-cont' id='amenities'>
         <div>
-            <h2 className='text-center fw-bold p-3 main-text-clr'>VTP DOLCEVITA AMENITIES</h2>
+            <h2 className='text-center fw-bold py-4 px-2 main-text-clr'>VTP DOLCEVITA AMENITIES</h2>
         </div>
         <div>
-            <div className='amen-r1 d-flex justify-content-between p-3 text-center align-items-center'>
+            <div className='amen-r1 d-flex justify-content-between py-4 text-center align-items-center'>
                 <div>
                     <picture>
                         <source srcSet={amenImgW1} type='image/webp'/>
@@ -62,7 +62,7 @@ const Amenities = () => {
                 </div>
             </div>
 
-            <div className='amen-r2 d-flex justify-content-between p-3 text-center align-items-center'>
+            <div className='amen-r2 d-flex justify-content-between py-4 text-center align-items-center'>
             <div>
                     <picture>
                         <source srcSet={amenImgW5} type='image/webp'/>
